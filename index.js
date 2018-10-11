@@ -1,7 +1,7 @@
 // Code your solution here:
-function driversWithRevenueOver(driver, revenue){
-  return driver.filter(i => i.revenue > revenue)
-  }
+
+const driversWithRevenueOver = driver.filter(i => i.revenue > revenue)
+
 
 function driverNamesWithRevenueOver(driver, name){
   let myArray = driversWithRevenueOver(driver, name)
