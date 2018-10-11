@@ -14,3 +14,10 @@ function exactMatch(collection, object) {
     return driver[Object.keys(object)[0]] === Object.values(object)[0];
   })
 }
+
+function exactMatchToList(collection, object) {
+  let driversList = exactMatch(collection, object)
+  return driversList.map(function(driver) {
+    return driver.name
+  })
+}
